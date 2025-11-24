@@ -1,0 +1,238 @@
+/* Esto define el fondo general y la letra */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F7F7F7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+    /* 💥 SOLUCIÓN: Agrega esta línea para volver a centrar el texto 💥 */
+    text-align: center; 
+    
+    /* ... otras reglas ... */
+}
+
+/* El estilo del encabezado verde */
+header {
+    background-color: #2E8B57; /* Verde "SeaGreen" */
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Las cajas blancas de cada sección */
+article {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Centrado */
+    max-width: 600px; /* Que no sea demasiado ancho */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una sombra suave */
+}
+
+/* Los títulos de los productos */
+h3 {
+    color: #2E8B57;
+}
+
+/* El botón naranja */
+/* El botón naranja 'Comprar Ahora' */
+a.buy-now-btn {
+    background-color: #ff8c00; /* Naranja vibrante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Crucial: Quita el subrayado de los enlaces */
+    display: inline-block; /* Crucial: Permite que el 'a' se comporte como un botón de bloque */
+    text-align: center;
+}
+
+/* El efecto al pasar el mouse */
+a.buy-now-btn:hover {
+    background-color: #e07b00; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+/* El pie de página */
+footer {
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9em;
+}
+/* Estilo para todas las imágenes de los productos */
+article img {
+    max-width: 100%; /* La imagen no superará el ancho de su caja */
+    height: auto; /* Mantener la proporción original */
+    border-radius: 8px; /* Bordes un poco redondeados */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+/* Regla para la nueva cuadrícula de 3 columnas */
+.product-grid {
+    display: grid;
+    /* Define 3 columnas: 1fr (1 parte), 2fr (2 partes, para la imagen), 1fr (1 parte) */
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 20px; /* Espacio entre las columnas */
+    align-items: center; /* Centra verticalmente el contenido de cada columna */
+    text-align: left; /* Alinea el texto en las columnas laterales */
+}
+
+/* Ajuste para que la imagen central siga centrada */
+.grid-center-main {
+    text-align: center; 
+}
+/* --- Estilos para las Ilustraciones (Placeholders Visuales) --- */
+
+/* Aplicar un estilo a todas las imágenes dentro de las columnas laterales */
+/* --- Estilos para las Ilustraciones (Ajuste de tamaño para llenar el espacio) --- */
+
+.grid-left-visuals img,
+.grid-right-info img {
+    width: 100%; /* Ocupa todo el ancho disponible en su columna */
+    height: auto; /* La altura se ajusta automáticamente para no distorsionarse */
+    max-height: 200px; /* Un límite para que no crezca demasiado en pantallas muy altas */
+    object-fit: contain; /* Ajusta la imagen dentro de su espacio sin cortarse */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    display: block;
+    padding: 5px; /* Pequeño padding interno para que no toque el borde */
+}
+/* --- Estilos del Banner Principal y Tipografía --- */
+
+header {
+    background-color: #2b844b; 
+    padding: 30px 0;
+    text-align: center; 
+    color: white; 
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Estilo específico para el logo en el encabezado */
+.header-logo {
+    height: 60px; /* Tamaño del logo */
+    vertical-align: middle; /* Alineación con el texto */
+    margin-right: 15px; /* Espacio de separación */
+}
+/* Estilo para el contenedor principal de la página */
+.main-content-wrapper {
+    max-width: 1200px; /* 👈 Este limita el ancho total de tu contenido */
+    margin: 0 auto; /* 👈 Esto centra el contenedor en la mitad de la pantalla */
+    padding: 20px; /* Un poco de relleno para que el contenido no toque los bordes */
+}
+/* Ajuste del ancho de las tarjetas individuales */
+.product-card {
+    /* Aumentamos el ancho para que la tarjeta ocupe más espacio */
+    max-width: 900px; 
+    /* Mantenemos el centrado dentro del contenedor principal */
+    margin: 20px auto; 
+    /* ... (mantener estilos de borde y sombra que ya tenías) ... */
+}
+/* --- Estilos para la Vista de Detalles del Producto --- */
+
+.product-details {
+    /* La propiedad display: none; es la clave: oculta el elemento y lo saca 
+    completamente del flujo de la página. 
+    */
+    display: none; 
+    padding: 20px;
+    border-top: 1px dashed #ccc; /* Separación sutil */
+    margin-top: 15px;
+}
+/* Diseño interno del bloque de detalles: media (QR/Video) y Precio */
+.product-details .details-content {
+    display: flex; /* Habilita el Flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+    justify-content: space-around; /* Distribuye el espacio entre los dos elementos */
+    align-items: flex-start; /* Alinea los elementos a la parte superior */
+    padding: 10px 0;
+    gap: 30px;
+}
+
+/* Estilo para la sección de precio */
+.product-details .details-price {
+    text-align: center;
+}
+
+/* Estilo para el precio en sí */
+.product-details .price {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #008000; /* Un verde vibrante para destacar el precio */
+    margin: 15px 0;
+}
+/* Clase para MOSTRAR el bloque de detalles */
+.is-visible {
+    /* Clase para OCULTAR cualquier elemento (usada en la cuadrícula principal) */
+.is-hidden {
+    display: none !important; 
+}
+    /* La propiedad !important asegura que esta regla tenga prioridad sobre display: none; */
+    display: block !important; 
+}
+/* Estilo para el GIF de vista previa en los detalles */
+.details-media img[src*="videogalapagos.gif"] {
+    /* Propiedades de ancho que ya tenías */
+    width: 80%; 
+    max-width: 800px; 
+    
+    /* PROPIEDADES NUEVAS PARA CONTROLAR EL LARGO */
+    max-height: 800px; /* **ESTABLECE AQUÍ LA ALTURA MÁXIMA DESEADA (por ejemplo, 400px)** */
+    height: auto; /* Asegura que la altura se ajuste a la proporción original */
+    
+    /* Propiedades de visualización */
+    display: block;
+    margin: 0 auto;
+}
+/* ======================================================= */
+/* === AJUSTES PARA DISPOSITIVOS MÓVILES (MEDIA QUERIES) === */
+/* ======================================================= */
+
+@media (max-width: 768px) {
+    
+    /* A. Ajuste para las TARJETAS PRINCIPALES (Grid de 3 columnas) */
+    .product-grid {
+        /* Desactiva el grid y usa solo una columna (apilada) */
+        grid-template-columns: 1fr;
+    }
+
+    /* B. Ajuste para la CUADRÍCULA DE DETALLES (Flex de 2 columnas) */
+    .product-details .details-content {
+        /* Permite que los elementos se apilen verticalmente */
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    /* C. Ajuste para la COLUMNA DE MEDIOS/GIFS */
+    .details-media {
+        /* Ocupa el 100% del ancho del contenedor */
+        flex-basis: 100%; 
+        max-width: 100%;
+    }
+
+    /* D. Ajuste para la COLUMNA DE PRECIOS */
+    .product-details .details-price {
+        /* Ocupa el 100% del ancho para centrar el botón */
+        flex-basis: 100%;
+        max-width: 100%;
+        /* Opcional: añade un margen para separarlo del contenido de arriba */
+        margin-top: 15px; 
+    }
+}

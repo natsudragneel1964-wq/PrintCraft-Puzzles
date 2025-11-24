@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintCraft 🇪🇨 | Puzzles & Colors</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+<body>
+
+    <header>
+    <h1>
+        <img src="images/printcraftlogo.png" alt="Logo de PrintCraft" class="header-logo">
+        PrintCraft 
+    </h1>
+    <p>Descubre Ecuador pieza a pieza</p>
+</header>
+<div class="main-content-wrapper"></div>
+
+    <hr> <section>
+        <h2>Nuestros Rompecabezas</h2>
+        
+        <article class="product-card">
+    
+    <div class="product-grid" id="galapagos-main-grid">
+        <div class="grid-left-visuals">
+            <img src="images/cajagalapagos.png" alt="Vista de la caja del puzzle Galápagos con las piezas">
+        </div>
+        <div class="grid-center-main">
+            <h3>🐢 Islas Galápagos</h3>
+            <img src="images/puzzlegalapagos.jpeg" alt="Rompecabezas de las Islas Galápagos">
+            <p>Un viaje a las islas encantadas. Descubre la fauna única en cada pieza.</p>
+            <button onclick="toggleDetails('galapagos-main-grid', 'galapagos-details')">Ver detalles</button>
+        </div>
+        <div class="grid-right-info">
+            <h4>Características Clave:</h4>
+            <ul>
+                <li>🧩 30 Piezas de encaje perfecto</li>
+                <li>Edad recomendada: Mayor a 4 años</li>
+                <li>🔗 Incluye código QR con acceso a historia animada</li>
+            </ul>
+        </div>
+    </div> <div class="product-details" id="galapagos-details">
+        
+        <h3>Detalles del Rompecabezas</h3>
+        
+        <div class="details-content">
+            <div class="details-media">
+                <p>Escanea para ver la historia animada:</p>
+                <img src="images/tarjetagalapagos.PNG" alt="Código QR" class="qr-code">
+                <p>Vista previa del contenido del QR:</p>
+              <div class="details-media">
+    
+    <img src="video/videogalapagos.gif" alt="Animación de Galápagos" width="100%">
+    </div>
+            </div>
+            <div class="details-price">
+                <h4>¡Oferta Especial!</h4>
+                <p class="price">$3.99 USD</p>
+               <a href="https://wa.me/593993149554?text=Hola!%20Me%20interesa%20el%20rompecabezas%20de%20Galápagos.%20Podrían%20darme%20más%20información?" 
+   class="buy-now-btn" 
+   target="_blank">
+    Comprar Ahora
+</a>
+            </div>
+        </div>
+        
+        <button class="close-btn" onclick="toggleDetails('galapagos-main-grid', 'galapagos-details')">Cerrar Detalles</button>
+        
+    </div> </article>
+      <article class="product-card">
+    
+    <div class="product-grid" id="andes-main-grid">
+
+        <div class="grid-left-visuals">
+            <img src="images/cajaandes.png" alt="Vista de la caja del puzzle Los Andes con las piezas">
+        </div>
+
+        <div class="grid-center-main">
+            <h3>🏔️ Los Andes Ecuatorianos</h3>
+            <img src="images/puzzleandes.jpeg" alt="Rompecabezas de Los Andes Ecuatorianos">
+            <p>Majestuosas montañas y paisajes de la sierra para armar en familia.</p>
+            <button onclick="toggleDetails('andes-main-grid', 'andes-details')">Ver detalles</button>
+        </div>
+
+        <div class="grid-right-info">
+            <h4>Características Clave:</h4>
+            <ul>
+                <li>🧩 30 Piezas de encaje perfecto</li>
+                <li>Edad recomendada: Mayor a 4 años</li>
+                <li>🔗 Incluye código QR con acceso a historia animada</li>
+            </ul>
+        </div>
+
+    </div> <div class="product-details" id="andes-details">
+        
+        <h3>Detalles del Rompecabezas Los Andes</h3>
+        
+        <div class="details-content">
+            <div class="details-media">
+                <p>Escanea para ver la historia animada (Andes):</p>
+                <img src="images/tarjetaandes.PNG" alt="Código QR" class="qr-code">
+                <p>Vista previa del contenido del QR:</p>
+                <img src="video/videoandes.gif" alt="Animación de Los Andes" width="100%"> 
+            </div>
+            <div class="details-price">
+                <h4>¡Oferta Especial Andes!</h4>
+                <p class="price">$3.99 USD</p>
+                <a href="https://wa.me/593993149554?text=Hola!%20Me%20interesa%20el%20rompecabezas%20de%20Los%20Andes.%20Podrían%20darme%20más%20información?" 
+   class="buy-now-btn" 
+   target="_blank">
+    Comprar Ahora
+</a>
+            </div>
+        </div>
+        
+        <button class="close-btn" onclick="toggleDetails('andes-main-grid', 'andes-details')">Cerrar Detalles</button>
+        
+    </div> </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Libro para colorear</h2>
+        
+        <article class="product-card">
+    
+    <div class="product-grid" id="book-main-grid">
+
+        <div class="grid-left-visuals">
+            <h4>Ficha Técnica del Libro:</h4>
+            <ul>
+                <li>📖 Contiene 31 páginas para colorear</li>
+                <li>Edad recomendada: Mayor a 4 años</li>
+                <li>🌎 Incluye animales representativos de cada continente</li>
+            </ul>
+        </div>
+
+        <div class="grid-center-main">
+            <h3>🎨 Libro Bilingüe: Animales del Mundo</h3>
+            <img src="images/portadalibro.PNG" alt="Portada de Libro Bilingüe para Colorear de Animales del Mundo">
+            <p>Aprende inglés y español coloreando los animales más representativos de cada continente.</p>
+            <button onclick="toggleDetails('book-main-grid', 'book-details')">Ver detalles</button>
+        </div>
+
+        <div class="grid-right-info">
+             <img src="images/contenidolibro.png" alt="Ejemplos del contenido interior del Libro Bilingüe">
+        </div>
+
+    </div> <div class="product-details" id="book-details">
+        
+        <h3>Detalles del Libro para Colorear</h3>
+        
+        <div class="details-content">
+            
+            <div class="details-media">
+                <p>Vista previa del Contenido Interior:</p>
+                <img src="images/contenidolibro.png" alt="Ejemplos del contenido interior del Libro Bilingüe" style="max-width: 80%;">
+                <p>También puedes ver una muestra del contenido educativo en video:</p>
+                <video width="100%" height="auto" autoplay loop muted>
+                    <source src="videos/book_preview.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
+            
+            <div class="details-price">
+                <h4>¡Oferta Especial!</h4>
+                <p class="price">$2.99 USD</p>
+                <a href="https://wa.me/593991234567?text=Hola!%20Me%20interesa%20el%20Libro%20para%20Colorear%20Bilingüe.%20Podrían%20darme%20más%20información?" 
+   class="buy-now-btn" 
+   target="_blank">
+    Comprar Ahora
+</a>
+            </div>
+            
+        </div>
+        
+        <button class="close-btn" onclick="toggleDetails('book-main-grid', 'book-details')">Cerrar Detalles</button>
+        
+    </div> </article>
+    </section>
+
+    <hr>
+</div>
+    <footer>
+    <p>Hecho con amor en Ecuador 🇪🇨</p>
+    <p>Contáctanos: 0993149554 / 0998929520</p>
+    <p>Instagram: <a href="https://www.instagram.com/printandcraft.ec" target="_blank">@printandcraft.ec</a></p>
+</footer>
+<script>
+    // Tu función existente para ocultar/mostrar detalles
+    function toggleDetails(mainGridId, detailsId) {
+        const mainGrid = document.getElementById(mainGridId);
+        const detailsBlock = document.getElementById(detailsId);
+        mainGrid.classList.toggle('is-hidden'); 
+        detailsBlock.classList.toggle('is-visible'); 
+    }
+
+    // FUNCIÓN PARA CREAR EL BUCLE DE VIDEO DE DURACIÓN LIMITADA (5 segundos)
+    function loopVideo(videoId, durationSeconds) {
+        const video = document.getElementById(videoId);
+        if (video) {
+            video.ontimeupdate = function() {
+                if (video.currentTime >= durationSeconds) {
+                    video.currentTime = 0;
+                }
+            };
+        }
+    }
+
+  // Llama a las funciones de bucle para cada video al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    // Bucle de 5 segundos para Galápagos (Hemos cambiado a GIF, ya no se necesita JS)
+    
+    // Aquí agregarías el código para Los Andes y el Libro
+    // loopVideo('andes-video', 5);
+    // loopVideo('book-video', 5);
+});
+// /* COMENTA TODA LA FUNCIÓN loopVideo ASÍ:
+/*
+function loopVideo(videoId, durationSeconds) {
+    // ... todo el código de la función ...
+}
+*/
+</script>
+</body>
+</html>
